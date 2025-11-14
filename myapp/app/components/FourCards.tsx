@@ -50,8 +50,8 @@ const FourCards = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden shadow-2xl relative">
 
           {/* LEFT TEXT BLOCK */}
-          <div className="md:col-span-3 bg-[#5c5c5c] p-8 sm:p-12 lg:p-16 flex flex-col">
-            <h2 className="text-4xl lg:text-[43px] text-white mb-6 -mt-10 ml-10 md:ml-28 leading-tight text-left md:text-left">
+          <div className="md:col-span-3 bg-[#5c5c5c]  p-8 sm:p-12 lg:p-16 flex flex-col">
+            <h2 className="text-4xl lg:text-[43px] hidden md:block text-white mb-6 -mt-10 ml-10 md:ml-28 leading-tight text-left md:text-left">
               Transforming{" "}
               <span className="text-4xl lg:text-[43px] font-extrabold text-white leading-tight">
                 Innovation,
@@ -117,13 +117,15 @@ const FourCards = () => {
           </div>
 
           {/* RIGHT IMAGE BLOCK */}
-          <div className="md:col-span-2 relative h-64 md:h-auto mt-[380px] md:mt-0">
+        <section className="">
+            <div className=" md:col-span-2 relative  h-64 md:h-auto mt-[380px] md:mt-0">
             <img
               src={content.imageSrc}
               alt={content.imageAlt}
               className="w-full h-full object-cover"
             />
           </div>
+        </section>
         </div>
       </div>
     </section>
